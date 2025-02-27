@@ -1,0 +1,67 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"vcs": {
+		"enabled": false,
+		"clientKind": "git",
+		"useIgnoreFile": false
+	},
+	"files": {
+		"ignoreUnknown": false,
+		"ignore": []
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab",
+		"formatWithErrors": false,
+		"indentWidth": 2,
+		"lineEnding": "lf",
+		"attributePosition": "auto"
+	},
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"complexity": {
+				"noForEach": "off",
+				"noUselessConstructor": "off",
+				"noStaticOnlyClass": "off",
+				"noUselessSwitchCase": "error",
+				"useFlatMap": "error",
+				"noUselessLoneBlockStatements": "off",
+				"noThisInStatic": "off"
+			},
+			"style": {
+				"noNegationElse": "off",
+				"useForOf": "error",
+				"useNodejsImportProtocol": "error",
+				"useNumberNamespace": "error",
+				"useImportType": "off",
+				"useConst": "off",
+				"noNonNullAssertion": "off"
+			},
+			"suspicious": {
+				"noExplicitAny": "off",
+				"noDoubleEquals": "error",
+				"noThenProperty": "error",
+				"useIsArray": "error",
+				"noRedeclare": "off"
+			}
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single",
+			"bracketSpacing": true,
+			"arrowParentheses": "always",
+			"trailingCommas": "all",
+			"semicolons": "always",
+			"lineWidth": 80,
+			"bracketSameLine": true,
+			"indentStyle": "space",
+			"indentWidth": 2
+		}
+	}
+}
